@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>MY CV</title>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Education.html">Education</a></li>
+                <li><a href="skills&languages.html">Skills&Languages</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+
+        <div class="skill">
+            <h1 class="subtitle"><span style="color: #75B9BE;" > Skills </span> and <span style="color: #75B9BE;" >Languages</span></h1> 
+            <li><h3>HTML</h3>
+                <span class="bar"><span class="html"></span></span>
+            </li>   
+            <li><h3>CSS</h3>
+                <span class="bar"><span class="css"></span></span>
+            </li> 
+            <li><h3>JAVA</h3>
+                <span class="bar"><span class="javascript"></span></span>
+            </li> 
+            <li><h3>REACT</h3>
+                <span class="bar"><span class="react"></span></span>
+            </li> 
+            <li><h3>PHP</h3>
+                <span class="bar"><span class="php"></span></span>
+            </li> 
+            
+        </div> 
+
+    <!-- footer section start -->
+    <section class="footer">
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+        <div class="credit"> All Rights Preserved</div>
+    </section>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu()
+        {
+            sidemenu.style.right = "0";
+        }
+    
+        function closemenu()
+        {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
